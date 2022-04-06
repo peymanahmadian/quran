@@ -1,0 +1,40 @@
+@import url("./../../assets/styles/base.css");
+.showText{
+    height: calc(100vh - 86px);
+    overflow-y: auto;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 16px;
+    background-color: #ffffff61;
+}
+
+.title{
+    text-align: center;
+    margin-top: 4px;
+    padding:8px 12px;
+    font-size: 24px;
+    background-color: #178b5b;
+    color:white;
+    border-radius: 8px;
+
+}
+.arabicText{
+    font-family: "alQalam";
+    font-size: 26px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+.arabicTextRed{
+    font-family: "alQalam";
+    font-size: 26px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color:red;
+}
+.persianText{
+    font-family: "vazir";
+    font-size: 16px;
+}

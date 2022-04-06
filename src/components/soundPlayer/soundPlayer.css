@@ -1,0 +1,33 @@
+.soundPlayer{
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    align-items: center;
+}
+.hidden{
+    display: none;;
+}
+.soundPlayer .pause,.soundPlayer .play{
+    /* //border: 2px solid #178b5b; */
+    padding: 4px;
+    height: 48px;
+    width: 48px;
+    border-radius: 32px;
+    position: relative;
+    margin: 0 6px;
+}
+.soundPlayer .pause img,.soundPlayer .play img{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left: 54%;
+
+}
+.soundPlayer .pause img{
+    left: 50%;
+}
+.soundPlayer img{
+    padding:6px
+}

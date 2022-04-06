@@ -1,0 +1,24 @@
+.suraButton{
+    position: relative;
+    height: 160px;
+    width: 160px;
+    display: block;
+    color:green;
+}
+.suraButton img{
+    height: 150px;
+}
+.suraButton span,.suraButton img{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.2s ease-in;
+}
+.suraButton:hover img{
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.suraButton:hover span{
+    text-shadow: 0 0 30px #001000;
+    font-weight: 900;
+}
