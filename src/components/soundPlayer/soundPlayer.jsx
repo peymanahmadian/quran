@@ -30,9 +30,10 @@ const SoundPlayer=(props)=>{
             audioRef.current.src=currentAyyahArray[currentAyyah];
             audioRef.current.play();
         }
-    },[currentAyyah])
+    },[currentAyyah,currentAyyahArray])
     useEffect(()=>{
         //find number of ayyah
+        debugger;
         let ayyahNumber=text.quran.sura[parseInt(props.sura)-1].aya.length;
         let fileArray=[];
         for(let count=props.ayyah ? props.ayyah : 1;count<= ayyahNumber;count++){

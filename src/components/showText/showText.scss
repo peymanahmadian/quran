@@ -1,0 +1,83 @@
+@import url("./../../assets/styles/base.scss");
+.showText{
+    height: calc(100vh - 86px);
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style:none;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 16px;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    .stage{
+        margin-top: 30px;
+        .title{
+            display: flex;
+            align-content: space-between;
+            align-items: center;
+            .suraTitle{
+                text-align: center;
+                width:40%;
+                position: relative;
+                span{
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    top: 25px;
+                    color: white;
+                }
+                img{
+                    height: 75px;
+                }
+            }
+            .hezbTitle,.jozTitle{
+                text-align: center;
+                width: 30%;
+                position: relative;
+                span{
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    top: 12px;
+                    color: white;
+                }
+                img{
+                    height: 52px;
+                }
+            }
+        }
+        .content{
+            background-color: white;
+            padding: 62px 20px 2px;
+            margin-top: -45px;
+            border-radius: 10px;
+            text-align: justify;
+            
+        }
+    }
+}
+.showText{
+
+}
+
+.arabicText{
+    font-family: "alQalam";
+    font-size: 26px;
+    cursor: pointer;
+    //display: flex;
+    align-items: center;
+
+}
+.arabicTextRed{
+    font-family: "alQalam";
+    font-size: 26px;
+    cursor: pointer;
+    //display: flex;
+    align-items: center;
+    color:red;
+}
+.persianText{
+    font-family: "vazir";
+    font-size: 16px;
+}

@@ -1,0 +1,31 @@
+.translatorShow{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-direction: row-reverse;
+    background-color: rgb(23 139 91);
+    color:white;
+    border-radius: 0 40px 40px 0;
+    justify-content:space-between;
+    input{
+        border: none;
+        background-color: #084b22;
+        color: white;
+        height: 86px;
+        border-radius: 0 35px 35px 0;
+        font-family: inherit;
+        padding: 0 12px;
+        cursor: pointer;
+        &:hover{
+            background-color: #0d843a;
+        }
+    }
+    
+}
+.avatar{
+    height: 65px;
+    width: 65px;
+    border-radius: 32px;
+    background-size: cover;
+    margin: 0 8px;
+}

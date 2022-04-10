@@ -1,7 +1,7 @@
 import persianJs from "persianjs";
-import "./showNumber.css";
+import "./showNumber.scss";
 const ShowNumber=(props)=>{
 
-    return(<div className="showNumber">۝<div className="number">{persianJs(props.children.toString()).englishNumber()._str}</div></div>)
+    return(<span className="showNumber">۝<span className="number">{persianJs(props.children.toString()).englishNumber()._str}</span></span>)
 }
 export default ShowNumber;

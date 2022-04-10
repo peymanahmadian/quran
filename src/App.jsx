@@ -1,8 +1,7 @@
 import {
   BrowserRouter,
   Route,
-  Routes,
-  Link
+  Routes
 } from "react-router-dom";
 import Text from "./pages/text.page";
 import Home from "./pages/home.page";
