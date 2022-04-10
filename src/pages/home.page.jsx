@@ -7,7 +7,7 @@ const Home=()=>{
             <div className="head"></div>
           <div className="list">
             {data.list.map(item=><SuraButton to={`/view?id=${item.id}`} name={item.name} />)}           
-          </div>
+          </div> 
         </div>
     )
 }
