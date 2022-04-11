@@ -6,7 +6,7 @@ const Home=()=>{
         <div className="home">
             <div className="head"></div>
           <div className="list">
-            {data.list.map(item=><SuraButton to={`/view?id=${item.id}`} name={item.name} />)}           
+            {data.list.map(item=><SuraButton to={`/view?id=${item.id}&ayyah=1`} name={item.name} />)}           
           </div> 
         </div>
     )
