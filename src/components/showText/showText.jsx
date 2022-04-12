@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import text from "./../../database/text.json";
-import translate from "./../../database/translate/fa.ansarian.json";
+import {text} from "./../../database/text";
+import {translate} from "./../../database/translate/fa.ansarian";
 import ShowNumber from "./../showNumber/showNumber";
 import convertNumbers from "../../common/convertNumber";
 import headerImg from "./../../assets/img/suratitle.png";
@@ -23,7 +23,17 @@ const ShowText = (props) => {
     let textTranslateShow = [];
     let suraData = null;
     let translateData = null;
-    if (secondId) {
+    if(id===secondId){
+      debugger;
+      suraData = JSON.parse(JSON.stringify(text.quran.sura[id - 1]));
+      suraData.aya = suraData.aya.slice(ayyah - 1,secondAyyah);
+      textShow.push(suraData);
+      //
+      translateData = JSON.parse(JSON.stringify(translate.quran.sura[id - 1]));
+      translateData.aya = translateData.aya.slice(ayyah - 1,secondAyyah);
+      textTranslateShow.push(translateData);
+    }
+    else if (secondId) {
       for (let count = id; count <= secondId; count++) {
         if (count === id) {
           suraData = JSON.parse(JSON.stringify(text.quran.sura[count - 1]));
@@ -51,7 +61,9 @@ const ShowText = (props) => {
         textShow.push(suraData);
         textTranslateShow.push(translateData);
       }
-    } else {
+    } 
+
+    else {
       suraData = JSON.parse(JSON.stringify(text.quran.sura[id - 1]));
       suraData.aya = suraData.aya.splice(ayyah - 1);
       textShow.push(suraData);
