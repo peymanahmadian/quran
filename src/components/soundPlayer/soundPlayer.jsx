@@ -1,5 +1,5 @@
 import {useEffect,useRef,useState} from "react";
-import text from "./../../database/text.json";
+import {text} from "./../../database/text";
 import img from "./../../assets/img/narriator/abdulbaset.png";
 import playImg from "./../../assets/img/play.png";
 import pauseImg from "./../../assets/img/pause.png";

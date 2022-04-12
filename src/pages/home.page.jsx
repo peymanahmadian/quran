@@ -1,5 +1,5 @@
 import SuraButton from "../components/suraButton/suraButton";
-import data from "./../database/suraList.json";
+import {suraList as data} from "./../database/suraList";
 import "./../assets/styles/base.scss";
 const Home=()=>{
     return(

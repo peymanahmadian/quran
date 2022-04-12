@@ -1,4 +1,4 @@
-{
+export  const translate={
   "quran": {
     "sura": [
       {

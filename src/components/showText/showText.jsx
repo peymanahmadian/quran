@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import text from "./../../database/text.json";
-import translate from "./../../database/translate/fa.ansarian.json";
+import {text} from "./../../database/text";
+import {translate} from "./../../database/translate/fa.ansarian";
 import ShowNumber from "./../showNumber/showNumber";
 import convertNumbers from "../../common/convertNumber";
 import headerImg from "./../../assets/img/suratitle.png";
