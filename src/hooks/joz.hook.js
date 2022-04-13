@@ -1,7 +1,7 @@
 import {useNavigate} from "react-router-dom";
 const useJoz=()=>{
     const navigate=useNavigate();
-    const goz=[
+    const joz=[
         {id:1,ayyah:1,secondId:2,secondAyyah:141},//1
         {id:2,ayyah:142,secondId:2,secondAyyah:252},//2
         {id:2,ayyah:253,secondId:3,secondAyyah:91},//3
@@ -34,7 +34,7 @@ const useJoz=()=>{
         {id:78,ayyah:1,secondId:114,secondAyyah:6},//29
     ];
         return (number)=>{
-            let item=goz[number-1];
+            let item=joz[number-1];
             navigate(`/view?id=${item.id}&ayyah=${item.ayyah}&secondId=${item.secondId}&secondAyyah=${item.secondAyyah}`);
         }
     
