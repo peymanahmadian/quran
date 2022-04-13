@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
+import persianJs from "persianjs";
+
 import {text} from "./../../database/text";
 import {translate} from "./../../database/translate/fa.ansarian";
 import ShowNumber from "./../showNumber/showNumber";
 import convertNumbers from "../../common/convertNumber";
 import headerImg from "./../../assets/img/suratitle.png";
+import {findHezb,findJoz} from "../../common/find";
 import "./showText.scss";
 const ShowText = (props) => {
   let id = parseInt(props.id);
@@ -18,7 +21,6 @@ const ShowText = (props) => {
   const [ayaTransShow, setAyaTransShow] = useState([]);
 
   useEffect(() => {
-    debugger;
     let textShow = [];
     let textTranslateShow = [];
     let suraData = null;
@@ -86,7 +88,7 @@ const ShowText = (props) => {
                 {suraIndex === 0 && (
                   <div className="hezbTitle">
                     <img alt="شماره حزب" src={headerImg} />
-                    <span>---</span>
+                    <span>حزب {persianJs(findHezb(props.readingText).toString()).englishNumber()._str}</span>
                   </div>
                 )}
 
@@ -97,7 +99,7 @@ const ShowText = (props) => {
                 {suraIndex === 0 && (
                   <div className="jozTitle">
                     <img alt="نام جز" src={headerImg} />
-                    <span>---</span>
+                    <span>جز  {persianJs(findJoz(props.readingText).toString()).englishNumber()._str} </span>
                   </div>
                 )}
               </div>

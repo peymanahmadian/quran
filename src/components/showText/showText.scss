@@ -1,4 +1,7 @@
 @import url("./../../assets/styles/base.scss");
+.jozTitle,.hezbTitle{
+    font-family: "vazir";
+}
 .showText{
     height: calc(100vh - 86px);
     overflow-y: auto;
@@ -42,7 +45,7 @@
                     position: absolute;
                     width: 100%;
                     left: 0;
-                    top: 12px;
+                    top: 14px;
                     color: white;
                 }
                 img{
