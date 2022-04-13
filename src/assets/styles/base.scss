@@ -64,3 +64,42 @@ body{
         display: none;
     }
 }
+.navigator{
+    position: absolute;
+    right: 46px;
+    bottom: 40px;
+    box-sizing: content-box;
+    .item{
+        margin-bottom: 8px;
+        color:white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        div{
+        
+                width: 100px;
+            
+            padding: 0 8px;
+        }
+    }
+    select{
+        font-family: inherit;
+        padding: 6px 8px;
+        width: 160px;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 4px;
+        color: white;
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style:none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        option{
+            background-color: white;
+            color:gray;
+            padding: 2px 8px;
+        }
+    }
+}
