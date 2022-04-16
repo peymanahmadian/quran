@@ -17,7 +17,7 @@ const Home=()=>{
               <div>
                   <select onChange={(e)=>{heze(e.target.value)}}>
                     <option value=""></option>
-                    {hezbNumber.map(item=><option value={item}>{item} حزب</option>)}
+                    {hezbNumber.map(item=><option value={item}>حزب {item} </option>)}
                   </select>
                 </div>
               </div>
@@ -26,7 +26,7 @@ const Home=()=>{
               <div>
                   <select onChange={(e)=>{goz(e.target.value)}}>
                     <option value=""></option>
-                    {gozNumber.map(item=><option value={item}>{item} جز</option>)}
+                    {gozNumber.map(item=><option value={item}>جز {item} </option>)}
                   </select>
                 </div>
               </div>

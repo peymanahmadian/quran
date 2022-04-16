@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import {useSearchParams} from "react-router-dom";
 import SoundPlayer from "../components/soundPlayer/soundPlayer";
 import TranslatorShow from "../components/translatorShow/translatorShow";

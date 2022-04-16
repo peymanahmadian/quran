@@ -51,7 +51,6 @@ const SoundPlayer=(props)=>{
     },[props.ayyah,props.sura,props.secondAyyah,props.secondSura]);
     //change current song
     useEffect(()=>{
-        debugger;
         props.currentAyyah && currentAyyahArray.forEach((item,index)=>{
             if(item.substr(item.length-10).slice(0,6)===props.currentAyyah){
                 setCurrentAyyah(index);
