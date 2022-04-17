@@ -1,3 +1,4 @@
+@import "../../assets/styles/base.scss";
 .translatorShow{
     display: flex;
     align-items: center;
@@ -7,6 +8,18 @@
     color:white;
     border-radius: 0 40px 40px 0;
     justify-content:space-between;
+    select{
+        font-family: "vazir";
+        border-radius: 4px;
+        background-color: transparent;
+        color:white;
+        border-color: white;
+        padding: 6px 10px;
+        option{
+            color:gray;
+            padding: 4px 6px;
+        }
+    }
     input{
         border: none;
         background-color: #084b22;
@@ -19,6 +32,7 @@
         &:hover{
             background-color: #0d843a;
         }
+
     }
     
 }
