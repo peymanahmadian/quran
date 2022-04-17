@@ -26,7 +26,6 @@ const ShowText = (props) => {
     let suraData = null;
     let translateData = null;
     if(id===secondId){
-      debugger;
       suraData = JSON.parse(JSON.stringify(text.quran.sura[id - 1]));
       suraData.aya = suraData.aya.slice(ayyah - 1,secondAyyah);
       textShow.push(suraData);
