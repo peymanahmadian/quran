@@ -1,0 +1,15 @@
+@import url('../../assets/styles/base.scss');
+.showNumber{
+    position: relative;
+    font-family: "vazir";
+    font-size: 28px;
+    width: 34px;
+}
+.showNumber .number{
+    position:absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    font-size: 14px;
+
+}

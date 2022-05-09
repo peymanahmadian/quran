@@ -1,0 +1,152 @@
+@import "./../../assets/styles/base.scss";
+@import url("./../../assets/styles/base.scss");
+
+.jozTitle,.hezbTitle{
+    font-family: "vazir";
+}
+.showText{
+
+    height: calc(100vh - 86px);
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style:none;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 16px;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    .stage{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        .title{
+            margin-top: 14px;
+            display: flex;
+            align-content: space-between;
+            align-items: center;
+            justify-content: center;
+            .suraTitle{
+                text-align: center;
+                width:40%;
+                position: relative;
+                span{
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    top: 25px;
+                    color: white;
+                }
+                img{
+                    height: 75px;
+                    width: 100%;
+                }
+            }
+            .hezbTitle,.jozTitle{
+                text-align: center;
+                width: 30%;
+                position: relative;
+                span{
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    top: 14px;
+                    color: white;
+                }
+                img{
+                    height: 52px;
+                    width: 100%;
+                }
+            }
+        }
+        .content{
+            background-color: white;
+            padding: 62px 20px 10px;
+            margin-top: -45px;
+            border-radius: 10px;
+            text-align: justify;
+            
+        }
+    }
+}
+.arabicText{
+    font-family: "alQalam";
+    font-size: 26px;
+    cursor: pointer;
+    //display: flex;
+    align-items: center;
+
+}
+.arabicTextRed{
+    font-family: "alQalam";
+    font-size: 26px;
+    cursor: pointer;
+    //display: flex;
+    align-items: center;
+    color:red;
+}
+.persianText{
+    font-family: "vazir";
+    font-size: 16px;
+}
+
+@include responsive(mobile){
+    .setting{
+        display:none;
+    }
+    .showText{
+        height: calc(100vh - 40px);
+        
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 4px;
+        .setting{
+            z-index: 9999;
+            position: fixed;
+            top:4px;
+        }
+        .stage{
+            
+            .title{
+                position: fixed;
+                top:0;
+                width: 100%;
+                margin-top: 0;
+                height: 50px;
+                background-color: #1b2f30;
+                background-image: url("./../../assets/img/suratitle.png");
+                z-index: 999;
+                .hezbTitle{
+                    height: inherit;
+                    width: 33.3%;
+                    img{
+                        display: none;
+                    }
+                }
+                .suraTitle{
+                    height: inherit;
+                    line-height: 6px;
+                    width: 33.3%;
+                    img{
+                        display: none;
+                    }
+                }
+                .jozTitle{
+                    height: inherit;
+                    width: 33.3%;
+                    img{
+                        display: none;
+                    }
+                }
+
+            }
+            .content{
+                margin-top: 2px;
+                border-radius: 0;
+                padding-top: 32px;
+            }
+           
+        }
+    }
+}
